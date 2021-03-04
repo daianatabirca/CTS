@@ -18,12 +18,14 @@ public class BankAccount {
 	
 	//metoda retragere de bani	
 	public void withdraw(long amount) {
+		System.out.println("Withdrawing " + amount  + " from " +iban);
 		balance -= amount; //scoatem din balance amount
 	}
 	
 	
 	//metoda depunere bani
 	public void deposit(long amount) {
+		System.out.println("Adding " + amount  + " from " +iban);
 		balance += amount; //adaugam in balance amount
 	}
 	

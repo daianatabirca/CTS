@@ -12,6 +12,13 @@ public class Main {
 		Person p = new Person("Daiana");
 		BankAccount account = new BankAccount("INGB34762872",p);
 		
+		account.deposit(100);
+		account.withdraw(50);
+		
+		account.withdraw(70);
+		
+		
+		System.out.println(account.getBalance());
 		
 		
 //		CalendarUtil cu = new CalendarUtil();
