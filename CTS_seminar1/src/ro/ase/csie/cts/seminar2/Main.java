@@ -6,10 +6,14 @@ public class Main {
 		
 		CalendarUtil cu = new CalendarUtil();
 		
-		System.out.println(cu.weekDay(3));
-		System.out.println(cu.weekDay2(3));
-		System.out.println(cu.weekDay3(3));
-
+		try {
+			//System.out.println(cu.weekDay(9).toUpperCase()); //apare eroarea
+			System.out.println(cu.weekDay2(4));
+			System.out.println(cu.weekDay3(3));
+			System.out.println(cu.weekDay4(3));
+		} catch (IncorectDayException e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
 }
