@@ -61,7 +61,13 @@ public class Main {
 //			System.out.println(e.getMessage());
 //		}
 		
-
+		
+		//SHORTCUTS
+		
+		//syso(+ctrl si spacebar + enter) -> shortcut pt System.out.println
+		//sau ctrl+1 pt altele
+		//ctrl+o gasire mai rapida metoda
+		//ctrl+shift+t sa gasim clasa/exceptia etc in pachete
 	}
 
 }
