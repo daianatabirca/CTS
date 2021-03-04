@@ -17,7 +17,9 @@ public class BankAccount {
 	}
 	
 	//metoda retragere de bani	
-	public void withdraw(long amount) {
+	public void withdraw(long amount) throws InsuficientFundsException {
+		if(amount > balance)
+			throw new InsuficientFundsException("Insuficient funds " + balance);
 		System.out.println("Withdrawing " + amount  + " from " +iban);
 		balance -= amount; //scoatem din balance amount
 	}
