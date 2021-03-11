@@ -1,17 +1,5 @@
-package ro.ase.csie.cts.seminar2;
+package ro.ase.csie.cts.seminar3;
 
-//import java.math.BigDecimal;
-
-import ro.ase.csie.cts.seminar2.solid.BankAccount;
-import ro.ase.csie.cts.seminar2.solid.FeeBankAccount;
-import ro.ase.csie.cts.seminar2.solid.InsuficientFundsException;
-import ro.ase.csie.cts.seminar2.solid.Person;
-//import java.math.BigDecimal;
-
-import ro.ase.csie.cts.seminar2.solid.BankAccount;
-import ro.ase.csie.cts.seminar2.solid.FeeBankAccount;
-import ro.ase.csie.cts.seminar2.solid.InsuficientFundsException;
-import ro.ase.csie.cts.seminar2.solid.Person;
 public class Main {
 
 	public static void main(String[] args) {

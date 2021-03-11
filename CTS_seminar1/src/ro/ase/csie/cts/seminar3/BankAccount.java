@@ -1,6 +1,6 @@
-package ro.ase.csie.cts.seminar2.solid;
+package ro.ase.csie.cts.seminar3;
 
-public class BankAccount {
+public class BankAccount implements Account {
 
 	private String iban;
 	//private double balance; //double, float (cu virtgula mobila) nu au precizie f buna -> verifica Main
@@ -17,6 +17,7 @@ public class BankAccount {
 	}
 	
 	//metoda retragere de bani	
+	@Override
 	public void withdraw(long amount) throws InsuficientFundsException {
 		if(amount > balance)
 			throw new InsuficientFundsException("Insuficient funds " + balance);
@@ -26,6 +27,7 @@ public class BankAccount {
 	
 	
 	//metoda depunere bani
+	@Override
 	public void deposit(long amount) {
 		System.out.println("Adding " + amount  + " to " +iban);
 		balance += amount; //adaugam in balance amount
