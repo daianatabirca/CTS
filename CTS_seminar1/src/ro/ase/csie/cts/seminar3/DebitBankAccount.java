@@ -1,6 +1,6 @@
 package ro.ase.csie.cts.seminar3;
 
-public class DebitBankAccount implements Account {
+public class DebitBankAccount implements Payable, Receivable {
 
 	private String iban;
 	//private double balance; //double, float (cu virtgula mobila) nu au precizie f buna -> verifica Main

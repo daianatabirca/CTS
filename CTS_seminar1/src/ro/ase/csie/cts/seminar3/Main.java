@@ -19,10 +19,10 @@ public class Main {
 //			System.out.println(e.getMessage());
 //		}
 //		
-		Map<Person, DebitBankAccount> employees = new HashMap<Person, DebitBankAccount>();
+		Map<Person, Receivable> employees = new HashMap<>();
 		
 		Person p1 = new Person("Chuck Norris");
-		DebitBankAccount b1 = new DebitBankAccount("RFZ37842943872",p1);
+		CreditBankAccount b1 = new CreditBankAccount("RFZ37842943872",p1,-500);
 		
 		Person p2 = new Person("Arnold");
 		DebitBankAccount b2 = new FeeBankAccount("INGB3434894",p2);
@@ -35,13 +35,20 @@ public class Main {
 		employees.put(p2, b2); //cheie = persoana; valoare = BankAccount
 		employees.put(p3, b3);
 		
-		for(DebitBankAccount a : employees.values()) {
+		for(Receivable a : employees.values()) {
 			a.deposit(1000);
 		}
 		
-		for(DebitBankAccount a : employees.values()) {
+		Map<Person, Payable> union = new HashMap<>();//sindicatul
+		
+		union.put(p2, b2);
+		union.put(p3, b3);
+		
+		
+		for(Payable a : union.values()) {
 			try {
 				a.withdraw(10);
+				
 			}catch (InsuficientFundsException ex) {
 				System.out.println(ex.getMessage());
 			}
