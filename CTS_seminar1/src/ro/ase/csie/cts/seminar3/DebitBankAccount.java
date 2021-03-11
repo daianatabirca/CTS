@@ -1,6 +1,6 @@
 package ro.ase.csie.cts.seminar3;
 
-public class BankAccount implements Account {
+public class DebitBankAccount implements Account {
 
 	private String iban;
 	//private double balance; //double, float (cu virtgula mobila) nu au precizie f buna -> verifica Main
@@ -10,7 +10,7 @@ public class BankAccount implements Account {
 	
 	//constructor cu 2 parametri
 	
-	public BankAccount(String iban, Person person) {
+	public DebitBankAccount(String iban, Person person) {
 		this.iban=iban;
 		this.accountHolder=person;
 		balance = 0; //intr-un cont nou deschis o initializam cu 0

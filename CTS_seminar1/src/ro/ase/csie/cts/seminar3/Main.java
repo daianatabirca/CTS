@@ -19,27 +19,27 @@ public class Main {
 //			System.out.println(e.getMessage());
 //		}
 //		
-		Map<Person, BankAccount> employees = new HashMap<Person, BankAccount>();
+		Map<Person, DebitBankAccount> employees = new HashMap<Person, DebitBankAccount>();
 		
 		Person p1 = new Person("Chuck Norris");
-		BankAccount b1 = new BankAccount("RFZ37842943872",p1);
+		DebitBankAccount b1 = new DebitBankAccount("RFZ37842943872",p1);
 		
 		Person p2 = new Person("Arnold");
-		BankAccount b2 = new FeeBankAccount("INGB3434894",p2);
+		DebitBankAccount b2 = new FeeBankAccount("INGB3434894",p2);
 		
 		Person p3 = new Person("Donald Trump");
-		BankAccount b3 = new BankAccount("BT74865387",p3);
+		DebitBankAccount b3 = new DebitBankAccount("BT74865387",p3);
 		
 		
 		employees.put(p1, b1); //cheie,valoare 
 		employees.put(p2, b2); //cheie = persoana; valoare = BankAccount
 		employees.put(p3, b3);
 		
-		for(BankAccount a : employees.values()) {
+		for(DebitBankAccount a : employees.values()) {
 			a.deposit(1000);
 		}
 		
-		for(BankAccount a : employees.values()) {
+		for(DebitBankAccount a : employees.values()) {
 			try {
 				a.withdraw(10);
 			}catch (InsuficientFundsException ex) {
