@@ -9,6 +9,7 @@ public class CreditBankAccount extends BankAccount implements Receivable {
 	public CreditBankAccount(String iban, Person accountHolder, long balance) {
 		this.iban=iban;
 		this.accountHolder=accountHolder;
+		this.balance=balance;
 	}
 
 //	@Override
@@ -24,9 +25,8 @@ public class CreditBankAccount extends BankAccount implements Receivable {
 
 	}
 
-	public void setBalance(long balance) {
-		this.balance = balance;
-	}
+//	public void setBalance(long balance) {
+//		this.balance = balance;
+//	}
 	
-
 }
