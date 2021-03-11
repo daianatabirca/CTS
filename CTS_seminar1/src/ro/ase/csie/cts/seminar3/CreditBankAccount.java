@@ -6,7 +6,8 @@ public class CreditBankAccount extends BankAccount implements Receivable {
 //	private String iban;
 //	private Person accountHolder;
 	
-	public CreditBankAccount(String iban, Person accountHolder, long balance) {
+	public CreditBankAccount(NotificationService ns,String iban, Person accountHolder, long balance) {
+		super(ns);
 		this.iban=iban;
 		this.accountHolder=accountHolder;
 		this.balance=balance;
@@ -20,7 +21,8 @@ public class CreditBankAccount extends BankAccount implements Receivable {
 
 	@Override
 	public void deposit(long amount) {
-		System.out.println("Adding " + amount  + " to " +iban);
+		notificationService.sendNotification(accountHolder, "Adding " + amount  + " to " +iban);
+		//System.out.println("Adding " + amount  + " to " +iban);
 		this.balance +=amount;
 
 	}

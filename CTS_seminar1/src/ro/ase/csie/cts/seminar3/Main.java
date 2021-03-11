@@ -19,16 +19,26 @@ public class Main {
 //			System.out.println(e.getMessage());
 //		}
 //		
+		
+		NotificationService smsService = new SMSNotificationService();
+		NotificationService emailService = new EmailNotificationService();
+		
 		Map<Person, Receivable> employees = new HashMap<>();
 		
 		Person p1 = new Person("Chuck Norris");
-		CreditBankAccount b1 = new CreditBankAccount("RFZ37842943872",p1,-500);
+		p1.setEmail("chuck@norris.com");
+		p1.setMobile("072655664");
+		CreditBankAccount b1 = new CreditBankAccount(smsService,"RFZ37842943872",p1,-500);
 		
 		Person p2 = new Person("Arnold");
-		DebitBankAccount b2 = new FeeBankAccount("INGB3434894",p2);
+		p2.setEmail("arnold@yahoo.com");
+		p2.setMobile("072623664");
+		DebitBankAccount b2 = new FeeBankAccount(smsService,"INGB3434894",p2);
 		
 		Person p3 = new Person("Donald Trump");
-		DebitBankAccount b3 = new DebitBankAccount("BT74865387",p3);
+		p3.setEmail("donald@trump.com");
+		p3.setMobile("072223664");
+		DebitBankAccount b3 = new DebitBankAccount(emailService,"BT74865387",p3);
 		
 		
 		employees.put(p1, b1); //cheie,valoare 

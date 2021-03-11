@@ -10,7 +10,8 @@ public class DebitBankAccount extends BankAccount implements Payable, Receivable
 	
 	//constructor cu 2 parametri
 	
-	public DebitBankAccount(String iban, Person person) {
+	public DebitBankAccount(NotificationService ns, String iban, Person person) {
+		super(ns);
 		this.iban=iban;
 		this.accountHolder=person;
 		balance = 0; //intr-un cont nou deschis o initializam cu 0
@@ -21,7 +22,9 @@ public class DebitBankAccount extends BankAccount implements Payable, Receivable
 	public void withdraw(long amount) throws InsuficientFundsException {
 		if(amount > balance)
 			throw new InsuficientFundsException("Insuficient funds " + balance);
-		System.out.println("Withdrawing " + amount  + " from " +iban);
+		notificationService.sendNotification(accountHolder, "Withdrawing " + amount  + " from " +iban);
+		
+		//System.out.println("Withdrawing " + amount  + " from " +iban);
 		balance -= amount; //scoatem din balance amount
 	}
 	
@@ -29,7 +32,7 @@ public class DebitBankAccount extends BankAccount implements Payable, Receivable
 	//metoda depunere bani
 	@Override
 	public void deposit(long amount) {
-		System.out.println("Adding " + amount  + " to " +iban);
+		notificationService.sendNotification(accountHolder, "Adding " + amount  + " to " +iban);
 		balance += amount; //adaugam in balance amount
 	}
 	

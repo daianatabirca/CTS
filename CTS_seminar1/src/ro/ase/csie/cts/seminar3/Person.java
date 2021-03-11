@@ -12,6 +12,32 @@ public class Person { //clasa utilizata sa nu punem toate atributele in BankAcco
 	
 	private long salary;
 	
+	private String email;
+	private String mobile;
+	
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+
+	public NotificationType getNotificationType() {
+		return notificationType;
+	}
+
+	public void setNotificationType(NotificationType notificationType) {
+		this.notificationType = notificationType;
+	}
+
+	private NotificationType notificationType;
+	
+	public static enum NotificationType{
+		EMAIL,
+		SMS
+	}
+	
 	//constructor
 	
 	public Person(String name) {
@@ -50,6 +76,14 @@ public class Person { //clasa utilizata sa nu punem toate atributele in BankAcco
 
 	public void setSalary(long salary) {
 		this.salary = salary;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 	

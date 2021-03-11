@@ -4,8 +4,8 @@ public class FeeBankAccount extends DebitBankAccount {
 
 	private long fee = 2; //comision
 	
-	public FeeBankAccount(String iban, Person person) {
-		super(iban, person);
+	public FeeBankAccount(NotificationService ns, String iban, Person person) {
+		super(ns, iban, person);
 	}
 	
 	//modificare metoda de retragere + comision adaugat

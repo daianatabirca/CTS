@@ -4,6 +4,12 @@ public abstract class BankAccount {
     protected String iban;
     protected long balance;
     protected Person accountHolder;
+    
+    protected NotificationService notificationService;
+    
+    public BankAccount(NotificationService notificationService) {
+    	this.notificationService=notificationService;
+    }
 
     public String getIban() {
         return iban;
