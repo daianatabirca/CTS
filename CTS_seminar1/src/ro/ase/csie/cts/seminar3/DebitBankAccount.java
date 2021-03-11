@@ -1,12 +1,12 @@
 package ro.ase.csie.cts.seminar3;
 
-public class DebitBankAccount implements Payable, Receivable {
+public class DebitBankAccount extends BankAccount implements Payable, Receivable {
 
-	private String iban;
-	//private double balance; //double, float (cu virtgula mobila) nu au precizie f buna -> verifica Main
-	private long balance;
-	
-	private Person accountHolder;
+//	private String iban;
+//	//private double balance; //double, float (cu virtgula mobila) nu au precizie f buna -> verifica Main
+//	private long balance;
+//	
+//	private Person accountHolder;
 	
 	//constructor cu 2 parametri
 	

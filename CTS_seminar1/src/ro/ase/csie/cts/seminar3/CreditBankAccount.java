@@ -1,15 +1,14 @@
 package ro.ase.csie.cts.seminar3;
 
-public class CreditBankAccount implements Receivable {
+public class CreditBankAccount extends BankAccount implements Receivable {
 	
-	private long balance;
-	private String iban;
-	private Person accountHolder;
+//	private long balance;
+//	private String iban;
+//	private Person accountHolder;
 	
 	public CreditBankAccount(String iban, Person accountHolder, long balance) {
 		this.iban=iban;
 		this.accountHolder=accountHolder;
-		this.balance=balance;
 	}
 
 //	@Override
@@ -24,5 +23,10 @@ public class CreditBankAccount implements Receivable {
 		this.balance +=amount;
 
 	}
+
+	public void setBalance(long balance) {
+		this.balance = balance;
+	}
+	
 
 }
