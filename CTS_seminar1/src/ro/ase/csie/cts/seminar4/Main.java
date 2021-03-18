@@ -39,9 +39,15 @@ public class Main {
 		
 		System.out.println(b.toString());
 		
-		Elvis elvis = Elvis.theTrueElvis;
+		Elvis elvis = Elvis.getInstance();
 		System.out.println("\n");
 		elvis.sing();
+		
+		Elvis elvis2 = Elvis.getInstance();
+		System.out.println(elvis==elvis2);
+		
+		ElvisV2 elvisV2 = ElvisV2.INSTANCE;
+		elvisV2.sing();
 		
 	}
 
