@@ -12,6 +12,8 @@ public class Person { //clasa utilizata sa nu punem toate atributele in BankAcco
 	
 	private long salary;
 	
+	private Integer age;
+	
 	private String email;
 	private String mobile;
 	
@@ -34,8 +36,22 @@ public class Person { //clasa utilizata sa nu punem toate atributele in BankAcco
 	private NotificationType notificationType;
 	
 	public static enum NotificationType{
-		EMAIL,
-		SMS
+		EMAIL {
+			@Override
+			public NotificationService getNotificationService() {
+				// TODO Auto-generated method stub
+				return new EmailNotificationService();
+			}
+		},		
+ 		
+ 		SMS {
+			@Override
+			public NotificationService getNotificationService() {
+				// TODO Auto-generated method stub
+				return new SMSNotificationService();
+			}
+		};		
+		public abstract NotificationService getNotificationService();//metoda abstracta
 	}
 	
 	//constructor
@@ -84,6 +100,14 @@ public class Person { //clasa utilizata sa nu punem toate atributele in BankAcco
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public Integer getAge() {
+		return age;
+	}
+
+	public void setAge(Integer age) {
+		this.age = age;
 	}
 	
 	
