@@ -9,6 +9,7 @@ import ro.ase.csie.cts.seminar4.banking.DebitBankAccount;
 import ro.ase.csie.cts.seminar4.banking.EmailNotificationService;
 import ro.ase.csie.cts.seminar4.banking.NotificationService;
 import ro.ase.csie.cts.seminar4.banking.Person;
+import ro.ase.csie.cts.seminar4.singleton.Elvis;
 
 public class Main {
 
@@ -21,7 +22,7 @@ public class Main {
 		DebitBankAccount b3 = new DebitBankAccount(emailService,"BT74865387",p3);
 
 		
-		//static factory m.
+		//static factory method
 		
 		//BankAccount b = new CreditBankAccount(emailService, "ING78345289",p3,100);
 		CreditBankAccount b = CreditBankAccount.createCreditBankAccountWithBalance
@@ -37,6 +38,10 @@ public class Main {
 		b.deposit(50);
 		
 		System.out.println(b.toString());
+		
+		Elvis elvis = Elvis.theTrueElvis;
+		System.out.println("\n");
+		elvis.sing();
 		
 	}
 
