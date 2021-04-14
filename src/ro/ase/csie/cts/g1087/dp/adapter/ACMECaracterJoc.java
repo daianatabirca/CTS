@@ -16,6 +16,13 @@ public abstract class ACMECaracterJoc {
 	public abstract void esteLovit(int puncte);
 	
 	public abstract void seVindeca(int puncte);
-	
 
+	public String getNume() { //sunt protected pt clasa DecoratorCaracter din pachetul decorator (ca sa fie accesibile, facem getteri)
+		return nume;
+	}
+
+	public int getPuncteViata() {
+		return puncteViata;
+	}
+	
 }

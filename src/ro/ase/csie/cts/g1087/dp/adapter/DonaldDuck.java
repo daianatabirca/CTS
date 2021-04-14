@@ -39,4 +39,9 @@ public class DonaldDuck implements ActiuniDisney{
 		System.out.println("Jump");
 	}
 
+	@Override
+	public String getNume() {
+		return denumire;
+	}
+
 }
