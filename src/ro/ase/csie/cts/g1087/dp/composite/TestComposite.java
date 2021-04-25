@@ -17,6 +17,7 @@ public class TestComposite {
 		grupNivelJoc.adaugaNod(grup1); //putem adauga si grupe in grupa dar si caractere simple 
 		grupNivelJoc.adaugaNod(grup2);
 		
+		//grupNivelJoc.getNod(0).atacaJucator("Superman");
 		grupNivelJoc.atacaJucator("Superman");
 		grupNivelJoc.seRetrage();
 		grupNivelJoc.getNod(0).seDeplaseaza();
