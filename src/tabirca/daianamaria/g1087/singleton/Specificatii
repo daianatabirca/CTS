@@ -1,1 +1,13 @@
-Tema - Licenta
+Rolul si aplicabilitatea realitatii augmentate in dezvoltarea aplicatiilor mobile (magazin online)
+
+1) Se doreste gestiunea eficienta si unica a conexiunii la Baza de Date
+	- programatorul, cel care implementeaza solutia, nu trebuie sa construiasca mai multe obiecte asociate conexiunii la Baza de Date
+	- utilizatorul trebuie sa foloseasca un unic obiect care sa ii permita conexiunea la Baza de Date
+
+Avantaje 
+	-gestiunea centralizata a contului de suport tehnic al magazinului printr-o instanta unica
+	-foarte usor de implementat – aceasta solutie
+	-Lazy instantiation – obiectul este creat atunci cand este necesar
+Dezavantaje 
+	-in multi-threading pot aparea probleme de sincronizare sau cooperare daca singleton-ul este partajat
+	-poate deveni un bottleneck care sa afecteze performanta aplicatiei

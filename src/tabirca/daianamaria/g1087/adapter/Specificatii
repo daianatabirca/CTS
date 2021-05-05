@@ -1,1 +1,13 @@
-Tema - Licenta
+Rolul si aplicabilitatea realitatii augmentate in dezvoltarea aplicatiilor mobile (magazin online)
+
+6) Se doreste utilizarea si integrarea in aplicatie a unei librarii externe ce contine utilizatorii proiectanti
+- in prezent, aplicatia poate gestiona doar utilizatori generali
+
+Avantaje:
+	- Clasele existente nu sunt modificate pentru a putea fi folosite intr-un alt context
+	- Se adauga doar un layer intermediar care permite crearea unor conturi de utilizatori proiectanti
+
+Dezavantaje:
+	- Adaptorul de clase se bazeaza pe derivare multipla, lucru care nu este posibil in Java. Alternativa este prin interfete si compunere
+	- Este dificil de implementat metodele clasei Adapter
+

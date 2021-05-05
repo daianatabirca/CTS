@@ -1,1 +1,16 @@
-Tema - Licenta
+Rolul si aplicabilitatea realitatii augmentate in dezvoltarea aplicatiilor mobile (magazin online)
+
+4) Toate obiectele de mobilier au asociate un model grafic 3D, folosind realitatea augmentata, aceasta este o cerinta fundamentala a aplicatiei
+- in aplicatie pot aparea mai multe instante ale aceluias produs
+- crearea modelului 3D este un proces costisitor deoarece presupune incarcarea si generarea modelului
+- trebuie gasita o solutie eficienta pentru a crea mai multe instante ale aceluiasi produs
+
+Avantaje:
+-	Creare rapida de modele de obiecte de mobilier prin clonare
+-	Se evita apelul explicit al constructorului
+-	Poate fi construita o colectie de prototipuri care sa fie utilizata pentru a genera obiecte noi
+
+Dezavantaje:
+-	Atentie la crearea de obiecte ce partajeaza aceleasi resurse - shallowcopy 
+-	Procesul poate deveni complex atunci cand exista multe clase pentru obiectele de clonat
+

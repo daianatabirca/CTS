@@ -1,1 +1,17 @@
-Tema - Licenta
+Rolul si aplicabilitatea realitatii augmentate in dezvoltarea aplicatiilor mobile (magazin online)
+
+8) Se doreste gestionarea intr-un mod eficient (din punct de vedere al memoriei) a scenariilor in care utilizatorii folosesc cu mai multe produse de mobilier controlate de calculator
+- colectia de produse coordonate de calculator contine elemente de acelasi fel (aceleasi modele 3D)
+- spatiul ocupat de un model 3D este semnificativ
+- generarea unui astfel de scenariu necesita un spatiu semnificativ de memorie pentru utilizator
+- modelele 3D sunt afisate pe ecran la coordonate diferite si pot avea culori si contururi diferite
+- trebuie gasita o solutie eficienta privind gestiunea acestor situatii
+
+Avantaje:
+	-	Se reduce memoria ocupata de obiectele grafice prin partajarea starii lor intre obiecte de acelasi tip
+	-	Performanta sporita datorita unui numar mai mic de obiecte costisitoare
+
+
+Dezavantaje:
+	-	Trebuie analizate clasele si contextul pentru a se determina ce reprezinta starea variabila ce poate fi internalizata
+	-	Efectele sunt vizibile daca numarul de obiecte grafice este mare

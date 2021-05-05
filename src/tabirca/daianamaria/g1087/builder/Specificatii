@@ -1,1 +1,18 @@
-Tema - Licenta
+Rolul si aplicabilitatea realitatii augmentate in dezvoltarea aplicatiilor mobile (magazin online)
+
+3) Instantierea unui produs de mobilier, pentru cumpararea ulterioara a acestuia de catre utilizatorul aplicatiei  
+- O canapea, de exemplu, are multe atribute pentru a permite particularizarea sa
+- denumire, categorie, brandOrigine, garantie, taraOrigine, pret etc
+- trebuie gasita o solutie eficienta care sa permita crearea obiectului de mobilier fara a da valori pentru toate atributele dar si fara a permite programatorilor sa omita unele dintre ele
+
+Avantaje:
+
+	- Obiectele de mobilier pot fi create independent de atributele care le compun (un obiect poate sa le includa pe toate sau doar o parte dintre acestea)
+	- Sistemul permite reprezentarea diferita a obiectelor create printr-o interfata comuna
+	- Algoritmul de creare a obiectului este flexibil deoarece clientul alege ce atribute sa fie create
+
+Dezavantaje:
+
+	- La crearea de obiecte, pot fi omise atribute 
+	- Pattern-ul necesita crearea unui builder separat (o functionalitate in plus) in cazul disponibilitatii unui nou obiect de mobilier 
+

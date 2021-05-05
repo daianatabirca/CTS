@@ -1,1 +1,16 @@
-Tema - Licenta
+Rolul si aplicabilitatea realitatii augmentate in dezvoltarea aplicatiilor mobile (magazin online)
+
+5) Modificarea in timpul utilizarii aplicatiei a specificatiilor contului de utilizator
+- in timpul utilizarii aplicatiei, utilizatorii pot obtine reduceri la comenzi, pot primi penalizari care duc la suspendarea contului
+- contul poate fi recuperat numai prin asteptarea unui numar minim de 30 zile
+
+Avantaje:
+
+	- Extinderea functionalitatii pentru un anumit cont se face dinamic, la run-time
+	- Decorarea este transparenta pentru utilizator deoarece clasa mosteneste clasa abstracta specifica obiectului
+	- Nu se impun limite privind un numar maxim de decorari, penalizarile si suspendarile unui cont pot fi nelimitate
+
+Dezavantaje:
+	- Decoratorul este un wrapper pentru obiectul initial. El nu este identic cu obiectul incapsulat
+	- Utilizarea excesiva genereaza o multime de obiecte care arata la fel dar care se comporta diferit – codul va fi dificil de inteles si verificat 
+

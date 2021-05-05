@@ -1,1 +1,15 @@
-Tema - Licenta
+Rolul si aplicabilitatea realitatii augmentate in dezvoltarea aplicatiilor mobile (magazin online)
+
+2) Crearea de diferite obiecte de mobilier in cadrul aplicatiei 
+- in prezent, exista 4 obiecte de mobilier in magazin: BIROU, CANAPEA, FOTOLIU, SCAUN
+- aplicatia, fiind in dezvoltare, presupune ca, in viitor, sa se disponibilizeze produse noi sau sa se modifice cele existente deja
+- trebuie utilizata o metoda eficienta care sa permita aplicatiei implementarea unui mecanism centralizat prin care crearea obiectelor este transparenta pentru utilizator; prin clasa abstracta, clientul stie cum sa creeze obiecte, dar nu stie cum este implementat acest lucru;
+
+Avantaje: 
+-	Clase specializate, utilizam single-responsibility => Clean – Code
+-	Este usor de implementat, apare singur prin buna practica
+Dezavantaje:
+-	Exista riscul de a utiliza gresit acest pattern, mai ales pentru programatorii incepatori
+-	Exista riscul de a intelege mai greu codul, abstractizand atat de mult clasele
+
+
