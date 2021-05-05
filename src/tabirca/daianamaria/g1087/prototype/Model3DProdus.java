@@ -30,7 +30,7 @@ public class Model3DProdus implements Cloneable {
 	}
 
 	@Override
-	protected Object clone() throws CloneNotSupportedException {
+	public Object clone() throws CloneNotSupportedException {
 		Model3DProdus produsCopie = new Model3DProdus();
 		produsCopie.material = this.material;
 		produsCopie.dimensiuni = (ArrayList<Integer>) this.dimensiuni.clone();

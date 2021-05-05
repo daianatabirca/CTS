@@ -1,8 +1,8 @@
 package tabirca.daianamaria.g1087.decorator;
 
-public class UtilizatorGeneral extends Utilizator {
+public class UtilizatorGeneralD extends Utilizator {
 
-	public UtilizatorGeneral(String nume, String prenume, int nrPen) {
+	public UtilizatorGeneralD(String nume, String prenume, int nrPen) {
 		super(nume, prenume, nrPen);
 	}
 
