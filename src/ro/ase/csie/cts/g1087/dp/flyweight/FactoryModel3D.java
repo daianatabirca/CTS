@@ -4,9 +4,9 @@ import java.util.HashMap;
 
 public class FactoryModel3D {
 
-	static HashMap<String, InterfataModel3D> modele = new HashMap<>();
+	static HashMap<String, InterfataModel3D> modele = new HashMap<>(); //gestionare prin HashMap
 
-	// eager instantiation
+	// eager instantiation (lazy instantion avem in curs pe github)
 
 	static {
 		// generam toate modelele 3D - modelel FlyWeight

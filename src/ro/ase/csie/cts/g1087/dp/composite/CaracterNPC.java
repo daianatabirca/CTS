@@ -1,6 +1,6 @@
 package ro.ase.csie.cts.g1087.dp.composite;
 
-public class CaracterNPC extends NodAbstractStructura implements InterfataCaractereNPC{
+public class CaracterNPC extends NodAbstractStructura implements InterfataCaractereNPC{ //NodFrunza (doar 1 angajat)
 
 	String nume;
 	int putere;
@@ -12,6 +12,7 @@ public class CaracterNPC extends NodAbstractStructura implements InterfataCaract
 		this.putere = putere;
 	}
 
+	//metode specifice pentru jucator 
 	@Override
 	public void atacaJucator(String numeJucator) {
 		System.out.println(String.format("%s ataca pe %s", nume, numeJucator));
@@ -29,10 +30,10 @@ public class CaracterNPC extends NodAbstractStructura implements InterfataCaract
 		System.out.println(String.format("%s se deplaseaza pe ecran", nume));
 		
 	}
-	
+	//metode specifice grupurilor 
 	@Override
 	public void adaugaNod(NodAbstractStructura nod) {
-		throw new UnsupportedOperationException();
+		throw new UnsupportedOperationException(); //se arunca exceptii pentru ca nu e grup! Non-sens!
 	}
 
 	@Override

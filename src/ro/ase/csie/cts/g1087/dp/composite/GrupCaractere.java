@@ -2,9 +2,9 @@ package ro.ase.csie.cts.g1087.dp.composite;
 
 import java.util.ArrayList;
 
-public class GrupCaractere extends NodAbstractStructura {
+public class GrupCaractere extends NodAbstractStructura { //Composite (+departament, grup)
 	
-	ArrayList<NodAbstractStructura> noduri = new ArrayList<>();
+	ArrayList<NodAbstractStructura> noduri = new ArrayList<>(); //lista!
 	String denumire;
 	
 
@@ -32,21 +32,21 @@ public class GrupCaractere extends NodAbstractStructura {
 
 	@Override
 	public void atacaJucator(String numeJucator) {
-		for(NodAbstractStructura nod : noduri)
+		for(NodAbstractStructura nod : noduri) //parcurgere simpla 
 			nod.atacaJucator(numeJucator);
 		
 	}
 
 	@Override
 	public void seRetrage() {
-		for(NodAbstractStructura nod: noduri)
+		for(NodAbstractStructura nod: noduri) //parcurgere simpla 
 			nod.seRetrage();
 		
 	}
 
 	@Override
 	public void seDeplaseaza() {
-		throw new UnsupportedOperationException();
+		throw new UnsupportedOperationException(); //nu dorim sa definim (non-sens pentru grup)
 		
 	}
 

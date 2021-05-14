@@ -1,6 +1,6 @@
 package ro.ase.csie.cts.g1087.dp.proxy;
 
-public class ModulLogin implements InterfataModulLogin {
+public class ModulLogin implements InterfataModulLogin { //ClasaConcreta
 
 	String ipServer;
 	int port;

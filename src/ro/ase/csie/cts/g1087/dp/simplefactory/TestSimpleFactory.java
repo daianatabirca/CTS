@@ -4,9 +4,9 @@ public class TestSimpleFactory {
 
 	public static void main(String[] args) {
 		
-		boolean selectieTemaUniversala = true;
+		boolean selectieTemaUniversala = true; //pentru factory method
 		
-		SuperErouAbstract superCaracter = null;
+		SuperErouAbstract superCaracter = null; //obtinem referinta superioara 
 		
 		if(selectieTemaUniversala) {
 			

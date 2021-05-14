@@ -24,5 +24,11 @@ public abstract class ACMECaracterJoc {
 	public int getPuncteViata() {
 		return puncteViata;
 	}
+
+	//am adaugat 
+	public void setPuncteViata(int puncteViata) {
+		this.puncteViata = puncteViata;
+	}
+	
 	
 }

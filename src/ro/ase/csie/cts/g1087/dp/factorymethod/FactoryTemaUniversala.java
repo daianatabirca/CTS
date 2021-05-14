@@ -9,7 +9,7 @@ import ro.ase.csie.cts.g1087.dp.simplefactory.TipErou;
 public class FactoryTemaUniversala extends FactoryAbstract {
 
 	@Override
-	public SuperErouAbstract getSuperErou(TipErou tip, String nume) {
+	public SuperErouAbstract getSuperErou(TipErou tip, String nume) { //Factory pentru clasele cu Tema OBISNUITA (clasele din simple)
 		
 		SuperErouAbstract superErou = null;
 		switch(tip) {

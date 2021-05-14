@@ -1,0 +1,6 @@
+
+Crearea de diferite tipuri de caractere din joc (<=> creational, tipuri de caractere <=> mai multe clase, trebuie sa aiba o baza comuna -> FACTORY)
+	-	in prezent exista 3 tipuri de caractere DISNEY, DC si MARVEL
+	-	jocul fiind in dezvoltare exista riscul ca in viitor sa apara tipuri noi sau cele existente se vor modifica
+	-	jocul permite alegerea unei teme care influenteaza colectia de personaje (factory method); trebuie utilizata o metoda eficienta 
+	-	care sa pemita jocului utilizarea oricarei teme fara a modifica major functionalitatea

@@ -1,0 +1,3 @@
+Pentru a gestiona o structura ierarhica de caractere (de ex o armata sau un grup de jucatori)
+	-	sa se gaseasca o solutie eficienta care sa permita gruparea jucatorilor
+	-	un grup poate contine caractere controlate de jucatori sau alte grupuri

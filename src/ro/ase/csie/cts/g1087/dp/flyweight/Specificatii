@@ -1,0 +1,7 @@
+Pentru a gestiona eficient (din punct de vedere al memoriei) scenariile in care jucatorii interactioneaza cu 
+	-	mai multe caractere controlate de calculator
+	-	colectia de caractere coordonate de calculator contine elemente de acelasi fel (aceleasi modele 3D) <=> element comun
+	-	spatiul ocupat de un model 3D este semnificativ
+	-	generarea unui astfel de scenariu necesita un spatiu semnificativ de memorie pentru client
+	-	modelele 3D sunt afisate pe ecran la coordonate diferite si pot avea texturi de culori diferite (Context etc, stari temporare si comune)
+	-	trebuie gasita o solutie eficienta privind gestiunea acestor situatii

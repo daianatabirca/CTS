@@ -6,7 +6,7 @@ public class TestPrototype {
 
 		Model3DCaracter superman1 = new Model3DCaracter("albastru");
 		
-		Model3DCaracter superman2 = (Model3DCaracter) superman1.clone();
+		Model3DCaracter superman2 = (Model3DCaracter) superman1.clone(); //castul este generat de Eclipse
 
 	}
 

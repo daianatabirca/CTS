@@ -1,0 +1,4 @@
+Toate caracterele au asociat un model grafic 3D <=> PROTOTYPE
+	- in joc pot aparea mai multe instante ale aceluiasi caracter
+	- crearea modelului 3D este un proces costisitor deoarece presupune incarcarea si generarea modelului
+	- trebuie gasita o solutie eficienta pentru a crea mai multe instante ale aceluiasi caracter

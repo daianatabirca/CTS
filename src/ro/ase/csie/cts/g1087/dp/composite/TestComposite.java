@@ -20,7 +20,7 @@ public class TestComposite {
 		//grupNivelJoc.getNod(0).atacaJucator("Superman");
 		grupNivelJoc.atacaJucator("Superman");
 		grupNivelJoc.seRetrage();
-		grupNivelJoc.getNod(0).seDeplaseaza();
+		grupNivelJoc.getNod(0).seDeplaseaza(); //level Boss este primul adaugat in grup 
 
 	}
 

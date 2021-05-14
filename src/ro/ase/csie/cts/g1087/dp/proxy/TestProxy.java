@@ -11,7 +11,7 @@ public class TestProxy {
 		if (login.login("admin", "admin12"))
 			System.out.println("Hello admin!");
 
-		String[] parole = new String[] { "1234", "123456", "admin", "root", "admin12" };
+		String[] parole = new String[] { "1234", "123456", "admin", "root", "admin12" }; //prototype?
 
 		for (String parola : parole) {
 			if (login.login("admin", parola))

@@ -1,0 +1,8 @@
+Specificatii Builder:
+Instantierea supereroului asociat jucatorului <=> BUILDER
+	- acesta are multe atribute pentru a permite particularizarea sa
+	- nume, estePozitiv, puncteViata, armaManaStanga, armaManaDreapta, superPutere, esteRanitCritic, superSuperPutere, etc
+	(pentru atributele care se repeta intr-un fel => interfete: superPutere + superSuperPutere, armaManaStanga + armaManaDreapta)
+	- trebuie gasita o solutie eficienta care sa permita crearea supereroului fara a da valori pentru toate atributele 
+	- dar si fara a permite programatorilor sa omita unele dintre ele
+

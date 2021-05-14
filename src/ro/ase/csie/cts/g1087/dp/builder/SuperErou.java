@@ -33,7 +33,7 @@ public class SuperErou {
 	
 	public static class SuperErouBuilder { //inner class - este STATICA, o clasa in interiorul altei clase, denumita OUTER CLASS
 		
-		SuperErou supererou; //instanta a unui SuperErou
+		SuperErou supererou; //instanta a unui SuperErou ; default sau private
 		
 		//constructor al clasei statice
 		public SuperErouBuilder(String nume, int puncteViata) {
@@ -42,8 +42,7 @@ public class SuperErou {
 			this.supererou.puncteViata = puncteViata;
 		}
 		
-		//metode => getteri si setteri pentru atributele SuperErouBuilder
-		//pentru atributele din SuperErouBuilder?
+		//metode => ca niste setteri pentru atributele din SuperErou - outer class
 		
 		public SuperErouBuilder esteNegativ() {
 			this.supererou.esteNegativ = true; //cand apelam functia => SuperEroul este negativ! fara sa-i mai dam valori

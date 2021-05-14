@@ -3,9 +3,9 @@ package ro.ase.csie.cts.g1087.dp.proxy;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ProxyLogin implements InterfataModulLogin {
+public class ProxyLogin implements InterfataModulLogin { //implementeaza si el interfata (Proxy se pune in fata Modulului de Login)
 
-	InterfataModulLogin modulLogin = null;
+	InterfataModulLogin modulLogin = null; //cu referinta 
 
 	public static final int NR_MAX_INCERCARI = 3; // pt parole -> contor (consecutive), aici e once in a lifetime
 	public Map<String, Integer> nrIncercari = new HashMap<>();// nr de incarcari nereusite

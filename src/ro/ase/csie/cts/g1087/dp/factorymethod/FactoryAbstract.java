@@ -5,6 +5,6 @@ import ro.ase.csie.cts.g1087.dp.simplefactory.TipErou;
 
 public abstract class FactoryAbstract {
 	
-	public abstract SuperErouAbstract getSuperErou(TipErou tip, String nume);
+	public abstract SuperErouAbstract getSuperErou(TipErou tip, String nume); //in Factory Abstract definim doar metoda de obtinere
 
 }

@@ -2,8 +2,9 @@ package ro.ase.csie.cts.g1087.dp.flyweight;
 
 import java.util.ArrayList;
 
-public class Model3D implements InterfataModel3D {
+public class Model3D implements InterfataModel3D { // FlyweightConcret
 
+	//stari permanente
 	String descriere;
 	ArrayList<Integer> puncteModel = new ArrayList<>();
 
@@ -12,6 +13,7 @@ public class Model3D implements InterfataModel3D {
 		this.descriere = descriere;
 	}
 
+	//stari temporare
 	@Override
 	public void incarcaModel3D(String fisier) {
 		System.out.println(String.format("Incarcare model pentru %s din fisierul %s", descriere, fisier));
@@ -19,7 +21,7 @@ public class Model3D implements InterfataModel3D {
 			puncteModel.add(i);
 
 	}
-
+	//stare temporara
 	@Override
 	public void afisareEcran(ContextEcran context) {
 		System.out.println(String.format("Afisare %s la %d, %d cu textura %s", descriere, context.getX(),

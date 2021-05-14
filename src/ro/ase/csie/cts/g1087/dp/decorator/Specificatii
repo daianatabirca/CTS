@@ -1,0 +1,3 @@
+Modificarea in timpul jocului (<=> la run-time!!) a caracteristicilor unor super-eroi
+	-	in timpul jocului super-eroii pot fi dotati cu echipamente noi (<=> atribute noi)
+	-	comportamentul super-eroului se poate modifica dinamic in functie de interactiunea cu celelalte caractere din joc 

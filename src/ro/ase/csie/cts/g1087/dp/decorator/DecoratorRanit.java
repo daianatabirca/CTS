@@ -9,7 +9,9 @@ public class DecoratorRanit extends DecoratorCaracter{
 	}
 
 	@Override
-	public void seDeplaseaza() {
+	public void seDeplaseaza() { //decorator pentru metoda seDeplaseaza()
+		//am scris super in loc de this
+		System.out.println(this.caracter.getPuncteViata()); //aici are dragonul 300?????
 		if (this.caracter.getPuncteViata() < 100) {
 			System.out.println("Nu se mai poate deplasa. Este ranit critic");
 		}

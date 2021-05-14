@@ -6,12 +6,12 @@ import ro.ase.csie.cts.g1087.dp.simplefactory.TipErou;
 public class FactoryTemaFantasy extends FactoryAbstract {
 
 	@Override
-	public SuperErouAbstract getSuperErou(TipErou tip, String nume) {
+	public SuperErouAbstract getSuperErou(TipErou tip, String nume) { //factory pentru clasele cu TEMA FANTASY
 		
 		SuperErouAbstract superErou = null; //referinta NULA
 		switch(tip) {
 		case DISNEY:
-			superErou = new CaracterFantasyDisney(nume, 100);
+			superErou = new CaracterFantasyDisney(nume, 100); //obiectul are 2 atribute
 			break;
 		case MARVEL:
 			superErou = new CaracterFantasyMarvel(nume, 500);
