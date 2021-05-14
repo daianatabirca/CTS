@@ -4,13 +4,13 @@ public class TestStrategy {
 
 	public static void main(String[] args) {
 		ProfilPlayer player = new ProfilPlayer("Superman", 60, 5);
-		player.setStrategieBonus(new StrategiePaste()); //a primit 50
+		player.setStrategieBonus(new StrategiePaste()); //a primit 50 -> setam strategia 
 		player.getBonus();
 
 		player.setStrategieBonus(new StrategieCraciun());
 		player.getBonus();
 
-		//OVERRIDE
+		//OVERRIDE pentru o metoda pe care o scriem noi, fara a-i mai defini o clasa 
 		player.setStrategieBonus(new InterfataBonus() {
 			public int getPuncteBonus(ProfilPlayer player) {
 				if(player.nrNiveluri >3)

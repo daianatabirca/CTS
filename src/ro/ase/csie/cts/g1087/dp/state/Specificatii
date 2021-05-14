@@ -1,0 +1,3 @@
+Comportamentul caracterului este influentat de starea (valorile atributelor) lui
+	-	daca acesta este ranit, miscarile sunt afectate (obiectul, singur, stie cand sa se modif.)
+	-	daca este afectat de actiunile magice ale celorlalte carcatere, actiunile acestuia (modul in care ataca, se apara) sunt afectate

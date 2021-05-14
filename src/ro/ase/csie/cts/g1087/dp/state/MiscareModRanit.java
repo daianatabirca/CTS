@@ -1,6 +1,6 @@
 package ro.ase.csie.cts.g1087.dp.state;
 
-public class MiscareModRanit implements InterfataMiscare{
+public class MiscareModRanit implements InterfataMiscare{ //Stare concreta A (StateA) implementeaza interfata pt stare
 
 	@Override
 	public void seDeplaseaza() {

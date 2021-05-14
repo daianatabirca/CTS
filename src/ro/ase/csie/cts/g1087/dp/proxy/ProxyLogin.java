@@ -34,9 +34,9 @@ public class ProxyLogin implements InterfataModulLogin { //implementeaza si el i
 					return false;
 				}
 			} else
-				return false;
+				return false; //se depaseste nr maxim de incercari
 		} else
-			throw new UnsupportedOperationException();
+			throw new UnsupportedOperationException(); //daca referinta e nula
 	}
 
 	@Override
