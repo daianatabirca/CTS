@@ -1,6 +1,10 @@
 package ro.ase.csie.cts.g1087.testare.modele;
 import java.util.ArrayList;
 
+import ro.ase.csie.cts.g1087.testare.exceptii.ExceptieNota;
+import ro.ase.csie.cts.g1087.testare.exceptii.ExceptieNume;
+import ro.ase.csie.cts.g1087.testare.exceptii.ExceptieVarsta;
+
 
 public class Student {
 	
@@ -29,7 +33,7 @@ public class Student {
 	}
 
 
-	public void setNume(String nume) {
+	public void setNume(String nume) throws ExceptieNume {
 		this.nume = nume;
 	}
 
@@ -39,12 +43,15 @@ public class Student {
 	}
 
 
-	public void setVarsta(int varsta) {
-		varsta = varsta;
+	public void setVarsta(int varsta) throws ExceptieVarsta{
+		if(varsta < Student.MIN_VARSTA || varsta >= Student.MAX_VARSTA) {
+			throw new ExceptieVarsta();
+		}
+		this.varsta = varsta;
 	}
 
 
-	public void setNote(ArrayList<Integer> note) {
+	public void setNote(ArrayList<Integer> note) throws ExceptieNota{
 		this.note = note;
 	}
 	
@@ -68,7 +75,13 @@ public class Student {
 	}
 
     public int getNotaMinima() {
-        int min = 0;
+    	
+    	if(this.note == null || this.note.size() == 0) {
+    		return 0;
+    	}
+    	
+    	
+        int min = this.note.get(0);
         for(int nota : this.note) {
 			if(min > nota) {
                 min = nota;
