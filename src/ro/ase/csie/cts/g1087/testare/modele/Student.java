@@ -44,7 +44,7 @@ public class Student {
 
 
 	public void setVarsta(int varsta) throws ExceptieVarsta{
-		if(varsta < Student.MIN_VARSTA || varsta >= Student.MAX_VARSTA) {
+		if(varsta < Student.MIN_VARSTA || varsta > Student.MAX_VARSTA) {
 			throw new ExceptieVarsta();
 		}
 		this.varsta = varsta;
@@ -52,7 +52,7 @@ public class Student {
 
 
 	public void setNote(ArrayList<Integer> note) throws ExceptieNota{
-		this.note = note;
+		this.note = (ArrayList<Integer>) note.clone();
 	}
 	
 	
